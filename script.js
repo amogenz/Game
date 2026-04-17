@@ -416,5 +416,43 @@ window.shareGame = async () => {
   }
 };
 
-
 init();
+
+function runTutorial() {
+  // 1. CEK DULU: Apakah user sudah pernah nonton?
+  const isDone = localStorage.getItem('amogenz_tutorial_done');
+  if (isDone) return; // Jika sudah ada datanya, fungsi berhenti di sini (gak muncul)
+
+  const overlay = document.getElementById('demo-overlay');
+  const hand = document.getElementById('hand');
+  const txt = document.getElementById('demo-text');
+  
+  if (!overlay) return;
+
+  overlay.style.display = 'flex';
+  overlay.style.pointerEvents = 'all'; 
+  overlay.onclick = null; 
+
+  hand.style.animation = 'demoSwipe 2.5s infinite';
+  
+  setTimeout(() => {
+    if(txt) txt.textContent = "Flick kartu ke atas untuk menjawab!";
+    hand.style.animation = 'demoFlick 2s infinite';
+  }, 5000);
+
+  setTimeout(() => {
+    if(txt) {
+      txt.innerHTML += "<br><br><span style='font-size:0.6rem; color:white; background:rgba(255,255,255,0.2); padding:4px 10px; border-radius:10px;'>Paham, Mulai Main!</span>";
+    }
+    
+    const closeNow = () => {
+      overlay.style.display = 'none';
+      // 2. SIMPAN DATA: Tandai bahwa user sudah nonton
+      localStorage.setItem('amogenz_tutorial_done', 'true');
+    };
+
+    overlay.onclick = closeNow;
+    overlay.ontouchstart = closeNow;
+  }, 8000);
+}
+
