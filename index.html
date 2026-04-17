@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Nahwu Card Master</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Noto+Naskh+Arabic:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="table"></div>
+<div id="rim"></div>
+
+<div id="app">
+  <div id="topbar">
+    <div class="tb-row">
+      <div>
+        <div class="tb-label">Nahwu Card Master</div>
+        <div id="lbl-word">—</div>
+      </div>
+      <div id="lbl-cnt">0/0</div>
+    </div>
+    <div class="prog"><div id="prog-fill"></div></div>
+    <div id="dots"></div>
+  </div>
+
+  <div id="sbox"><div id="sentence">...</div></div>
+
+  <div id="dropzone">
+    <div id="qtext">Pilih jawaban...</div>
+    <div class="dz-hint">↑ Flick kartu ke sini untuk jawab</div>
+  </div>
+
+  <div id="stage"><div id="deck"></div></div>
+
+  <div id="hint">◀ Geser kiri/kanan pilih kartu &nbsp;•&nbsp; Flick atas untuk jawab ▲</div>
+</div>
+
+<div id="modal">
+  <div class="mbox">
+    <div id="m-suit">♠</div>
+    <h2 id="m-title">MUMTAZ!</h2>
+    <p id="m-desc"></p>
+    <button class="btn-ok" onclick="closeModal()">LANJUTKAN ▶</button>
+  </div>
+</div>
+
+<div id="rdone">
+  <div class="rd-box">
+    <div class="rd-icon">🃏</div>
+    <div class="rd-title">KALIMAT SELESAI!</div>
+    <div class="rd-sub">Memuat kalimat berikutnya...</div>
+  </div>
+</div>
+
+<script type="module" src="script.js"> </script>
+</body>
+</html>
