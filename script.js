@@ -351,21 +351,69 @@ window.surrender = () => {
   const title = document.getElementById('m-title');
   const desc = document.getElementById('m-desc');
   const suit = document.getElementById('m-suit');
-  const btn = document.querySelector('.btn-ok');
+  const mBox = document.querySelector('.mbox');
+  const btnOk = document.querySelector('.btn-ok');
 
-  // Set konten khusus menyerah
+  // 1. Set Konten
   suit.textContent = '🏳️';
   title.textContent = 'MENYERAH?';
   title.style.color = 'var(--danger)';
-  desc.textContent = 'Tak patutt 👶';
-  btn.textContent = 'YA, COBA LAGI 🔄';
+  desc.textContent = 'Tak patutt bray, dikit lagi jago nih! 👶';
+  btnOk.textContent = 'YA, REFRESH 🔄';
 
-  // Override fungsi tombol modal khusus untuk refresh
-  btn.onclick = () => {
-    window.location.reload(); 
+  // 2. Tambahkan Tombol Batal jika belum ada
+  let btnCancel = document.getElementById('btn-cancel');
+  if (!btnCancel) {
+    btnCancel = document.createElement('button');
+    btnCancel.id = 'btn-cancel';
+    btnCancel.className = 'btn-batal'; // Kita buat class baru
+    btnCancel.textContent = 'KAGAK JADI, LANJUT! 🔥';
+    mBox.appendChild(btnCancel);
+  }
+  btnCancel.style.display = 'block';
+
+  // 3. Logika Klik
+  btnOk.onclick = () => window.location.reload();
+  
+  btnCancel.onclick = () => {
+    modal.style.display = 'none';
+    btnCancel.style.display = 'none'; // Sembunyikan lagi biar gak ganggu modal Mumtaz
   };
 
   modal.style.display = 'flex';
+};
+
+// Update juga fungsi closeModal bawaan agar tombol batal hilang
+const originalCloseModal = window.closeModal;
+window.closeModal = () => {
+  const btnCancel = document.getElementById('btn-cancel');
+  if (btnCancel) btnCancel.style.display = 'none';
+  originalCloseModal();
+};
+
+window.shareGame = async () => {
+  const shareTitle = 'Nahwu Card Master - Game Belajar I\'rob';
+  const shareText = 'Aplikasi belajar Nahwu Shorof bertenaga AI. Analisa I\'rob otomatis dengan game kartu interaktif. Gratis untuk santri! Coba sekarang:';
+  const shareUrl = 'https://game-nahwu.amogenz.xyz';
+
+  const fullMessage = `${shareText} ${shareUrl}`;
+
+  try {
+    if (navigator.share) {
+      // Fitur Utama untuk Mobile (WA, IG, FB, Tele otomatis muncul)
+      await navigator.share({
+        title: shareTitle,
+        text: shareText,
+        url: shareUrl,
+      });
+    } else {
+      // Fallback untuk Desktop/PC (Buka WhatsApp sebagai opsi utama)
+      const waUrl = `https://wa.me/?text=${encodeURIComponent(fullMessage)}`;
+      window.open(waUrl, '_blank');
+    }
+  } catch (err) {
+    console.log('Berbagi dibatalkan atau terjadi kesalahan');
+  }
 };
 
 
