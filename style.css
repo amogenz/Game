@@ -338,3 +338,60 @@ html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-
   animation:spk .85s ease-out forwards;
 }
 @keyframes spk { 0%{transform:translateY(0) scale(1);opacity:1} 100%{transform:translateY(-90px) scale(0);opacity:0} }
+/* Update Topbar untuk perataan tengah */
+.tb-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.tb-label {
+  font-size: clamp(0.48rem, 1.8vw, 0.6rem);
+  letter-spacing: 3px;
+  color: var(--accent);
+  opacity: 0.75;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#lbl-word {
+  font-size: clamp(1rem, 4vw, 1.3rem); /* Ukuran sedikit diperbesar */
+  color: var(--accent);
+  font-family: 'Noto Naskh Arabic', serif;
+  direction: rtl;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2px;
+}
+
+#lbl-cnt {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: clamp(0.6rem, 2.3vw, 0.75rem);
+  color: var(--accent2);
+}
+
+/* Style Tombol Menyerah */
+#btn-surrender {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: var(--danger);
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.5rem, 2vw, 0.65rem);
+  letter-spacing: 2px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: -5px; /* Menempel sedikit ke arah atas */
+  z-index: 15;
+}
+
+#btn-surrender:active {
+  background: var(--danger);
+  color: #fff;
+  transform: scale(0.95);
+}
