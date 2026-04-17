@@ -343,5 +343,30 @@ function doSparkle(){
     },i*65);
   }
 }
+// Tambahkan fungsi ini di dalam script.js
+window.surrender = () => {
+  if (busy) return;
+  
+  const modal = document.getElementById('modal');
+  const title = document.getElementById('m-title');
+  const desc = document.getElementById('m-desc');
+  const suit = document.getElementById('m-suit');
+  const btn = document.querySelector('.btn-ok');
+
+  // Set konten khusus menyerah
+  suit.textContent = '🏳️';
+  title.textContent = 'MENYERAH?';
+  title.style.color = 'var(--danger)';
+  desc.textContent = 'Tak patutt 👶';
+  btn.textContent = 'YA, COBA LAGI 🔄';
+
+  // Override fungsi tombol modal khusus untuk refresh
+  btn.onclick = () => {
+    window.location.reload(); 
+  };
+
+  modal.style.display = 'flex';
+};
+
 
 init();
