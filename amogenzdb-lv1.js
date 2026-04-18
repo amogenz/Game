@@ -148,20 +148,20 @@ export const AMOGENZ_DB_LV1 = [
 },
   {
 "id_kalimat": "amogenz_kalimat_004",
-"teks_kalimat": "يَحْضُرْ خَالِدٌ الفصل",
+"teks_kalimat": "يَحْضُر خالد الفصل",
 "analysis": [
 {
 "id_lafadz": "amogenz_lafadz_010",
-"word": "يَحْضُرْ",
+"word": "يحضر",
 "steps": {
 "1": { "question": "Apa jenis kalimat يَحْضُرْ?", "options": ["Isim", "Fi'il", "Huruf"], "correct": "Fi'il", "explanation": "Menunjukkan pekerjaan." },
 "2": { "question": "Apa tanda/alasan يَحْضُرْ disebut Fi'il?", "options": ["Huruf Mudhoro'ah", "Tanwin", "Al"], "correct": "Huruf Mudhoro'ah", "explanation": "Diawali dengan huruf Ya'." },
 "3": { "question": "Apakah status يَحْضُرْ Mu'rob atau Mabni?", "options": ["Mu'rob", "Mabni"], "correct": "Mu'rob", "explanation": "Fi'il mudhori' yang tidak bersambung nun niswah/taukid." },
 "4": { "question": "Mengapa يَحْضُرْ berstatus Mu'rob?", "options": ["Fi'il Mudhori'", "Fi'il Madhi", "Fi'il Amr"], "correct": "Fi'il Mudhori'", "explanation": "Fi'il mudhori' hukum asalnya mu'rob." },
-"5": { "question": "Apa kedudukan I'rob/Mabni kata يَحْضُرْ?", "options": ["Jazm", "Rafa'", "Nashab"], "correct": "Jazm", "explanation": "Asumsi terdapat amil jazm sebelumnya atau dalam konteks tholab (soal ini diasumsikan sukun karena jazm)." },
-"6": { "question": "Apa alasan يَحْضُرْ dihukumi Jazm?", "options": ["Amil Jazm", "Kemurnian", "Bentuk Fi'il"], "correct": "Amil Jazm", "explanation": "Fi'il mudhori' dijazmkan oleh amil jazm." },
-"7": { "question": "Apa tanda I'rob/Mahal I'rob pada يَحْضُرْ?", "options": ["Sukun", "Hapus Huruf", "Hapus Nun"], "correct": "Sukun", "explanation": "Tanda asli jazm." },
-"8": { "question": "Mengapa tandanya menggunakan Sukun?", "options": ["Shahihul Akhir", "Mu'tal Akhir", "Af'alul Khomsah"], "correct": "Shahihul Akhir", "explanation": "Karena huruf akhirnya (Ra') bukan huruf illat." }
+"5": { "question": "Apa kedudukan I'rob/Mabni kata يَحْضُرْ?", "options": ["Jazm", "Rafa'", "Nashab"], "correct": "Rafa'", "explanation": "tidak terdapat amil jazm dan amil nawasib sebelum kalimatnya." },
+"6": { "question": "Apa alasan يَحْضُرْ dihukumi Rafa'?", "options": ["Amil Jazm", "Kemurnian", "Bentuk Fi'il"], "correct": "Amil Jazm", "explanation": "sunyi dari amil jazm dan amil nawasib." },
+"7": { "question": "Apa tanda I'rob/Mahal I'rob pada يَحْضُرْ?", "options": ["dhommah", "Hapus Huruf", "Hapus Nun"], "correct": "dhommah", "explanation": "karena shihul akhir." },
+"8": { "question": "Mengapa tandanya menggunakan dhommah?", "options": ["Shahihul Akhir", "Mu'tal Akhir", "Af'alul Khomsah"], "correct": "Shahihul Akhir", "explanation": "Karena huruf akhirnya (Ra') bukan huruf illat." }
 }
 },
 {
