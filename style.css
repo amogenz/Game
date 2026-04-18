@@ -542,3 +542,54 @@ html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-
   80% { transform: translateY(-150px); opacity: 1; }
   100% { transform: translateY(-150px); opacity: 0; }
 }
+/* DROP ZONE TEXT */
+#qtext { 
+  font-family: 'Plus Jakarta Sans', sans-serif; /* Font lebih bersih */
+  font-size: clamp(0.85rem, 3vw, 1rem); 
+  font-weight: 600;
+  color: #ffffff; /* Putih bersih agar kontras tinggi */
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.dz-hint { 
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(0.55rem, 2vw, 0.65rem); 
+  color: var(--accent); /* Kuning accent terang */
+  font-weight: 700;
+  letter-spacing: 1.5px; 
+  margin-top: 8px; 
+  text-transform: uppercase;
+  background: rgba(0,0,0,0.4); /* Kasih background tipis biar teks naik */
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* HINT BAWAH (Navigasi) */
+#hint {
+  flex-shrink: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(0.6rem, 2.2vw, 0.75rem);
+  font-weight: 500;
+  color: #ffffff; /* Dari redup jadi putih terang */
+  background: rgba(0, 0, 0, 0.5); /* Background gelap transparan */
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid rgba(245, 200, 66, 0.2);
+  letter-spacing: 0.5px; 
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* DEMO TEXT (Tutorial) */
+#demo-text {
+  position: relative;
+  margin-bottom: 50px;
+  font-family: 'Plus Jakarta Sans', sans-serif; /* Ganti dari Cinzel */
+  font-weight: 700;
+  color: #ffffff;
+  font-size: clamp(1.1rem, 5vw, 1.5rem);
+  text-align: center;
+  width: 85%;
+  text-shadow: 0 4px 15px rgba(0,0,0,1);
+}
