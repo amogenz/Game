@@ -159,7 +159,7 @@ export const AMOGENZ_DB_LV1 = [
 "3": { "question": "Apakah status يَحْضُرْ Mu'rob atau Mabni?", "options": ["Mu'rob", "Mabni"], "correct": "Mu'rob", "explanation": "Fi'il mudhori' yang tidak bersambung nun niswah/taukid." },
 "4": { "question": "Mengapa يَحْضُرْ berstatus Mu'rob?", "options": ["Fi'il Mudhori'", "Fi'il Madhi", "Fi'il Amr"], "correct": "Fi'il Mudhori'", "explanation": "Fi'il mudhori' hukum asalnya mu'rob." },
 "5": { "question": "Apa kedudukan I'rob/Mabni kata يَحْضُرْ?", "options": ["Jazm", "Rafa'", "Nashab"], "correct": "Rafa'", "explanation": "tidak terdapat amil jazm dan amil nawasib sebelum kalimatnya." },
-"6": { "question": "Apa alasan يَحْضُرْ dihukumi Rafa'?", "options": ["Amil Jazm", "Kemurnian", "Bentuk Fi'il"], "correct": "Amil Jazm", "explanation": "sunyi dari amil jazm dan amil nawasib." },
+"6": { "question": "Apa alasan يَحْضُرْ dihukumi Rafa'?", "options": ["Amil Jazm", "Kemurnian", "Bentuk Fi'il"], "correct": "kemurnian", "explanation": "sunyi dari amil jazm dan amil nawasib." },
 "7": { "question": "Apa tanda I'rob/Mahal I'rob pada يَحْضُرْ?", "options": ["dhommah", "Hapus Huruf", "Hapus Nun"], "correct": "dhommah", "explanation": "karena shihul akhir." },
 "8": { "question": "Mengapa tandanya menggunakan dhommah?", "options": ["Shahihul Akhir", "Mu'tal Akhir", "Af'alul Khomsah"], "correct": "Shahihul Akhir", "explanation": "Karena huruf akhirnya (Ra') bukan huruf illat." }
 }
