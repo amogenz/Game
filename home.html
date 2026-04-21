@@ -199,6 +199,49 @@
         @media (max-width: 480px) {
             .logo-amogenz { font-size: 1.5rem; }
         }
+        /* Informasi Versi & Tanggal */
+.ps-version-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 3px solid var(--play-green);
+}
+
+.ps-v-label {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ps-v-value {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.badge-new {
+    background: var(--play-green);
+    color: white;
+    font-size: 0.6rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 5px;
+    vertical-align: middle;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
     </style>
 </head>
 <body>
@@ -210,41 +253,53 @@
 
     <div class="container">
         
-        <div class="playstore-card">
-            
-            <div class="ps-header">
-                <img src="https://i.ibb.co.com/LXGk3Pvw/Akasara-icon.webp" alt="Aksara Icon Nahwu" class="ps-app-icon">
-                <div class="ps-app-meta">
-                    <h1>Nahwu Card: Master I'rob</h1>
-                    <a href="https://amogenz.xyz" class="ps-developer" target="_blank">Amogenz.Inc</a>
-                </div>
-            </div>
-
-            <div class="ps-info-bar">
-                <div class="ps-info-item">
-                    <span style="font-weight: 700; color: #fff; margin-right: 2px;">5.0</span>
-                    <i class="ph-fill ph-star" style="color: #fff;"></i>
-                </div>
-                <div class="ps-info-item">|</div>
-                <div class="ps-info-item">
-                    <i class="ph ph-intersect"></i>
-                    <span>18 MB</span>
-                </div>
-                <div class="ps-info-item">|</div>
-                <div class="ps-info-item">
-                    <i class="ph ph-shield-check"></i>
-                    <span>Edukasi</span>
-                </div>
-            </div>
-
-            <a href="https://github.com/amogenz/Game/releases/download/Apk/NahwuCard.apk" class="ps-btn-instal">
-                Instal
-            </a>
-
-            <p class="ps-description">
-                Latih kemampuan analisa I'rob kamu melalui game kartu interaktif. Lebih stabil, lancar, dan hemat kuota dengan versi aplikasi Android resmi.
-            </p>
+<div class="playstore-card">
+    
+    <div class="ps-header">
+        <img src="https://i.ibb.co.com/LXGk3Pvw/Akasara-icon.webp" alt="Aksara Icon Nahwu" class="ps-app-icon">
+        <div class="ps-app-meta">
+            <h1>Nahwu Card: Master I'rob</h1>
+            <a href="https://amogenz.xyz" class="ps-developer" target="_blank">Amogenz.Inc</a>
         </div>
+    </div>
+
+    <div class="ps-info-bar">
+        <div class="ps-info-item">
+            <span style="font-weight: 700; color: #fff; margin-right: 2px;">5.0</span>
+            <i class="ph-fill ph-star" style="color: #fff;"></i>
+        </div>
+        <div class="ps-info-item">|</div>
+        <div class="ps-info-item">
+            <i class="ph ph-intersect"></i>
+            <span>18 MB</span>
+        </div>
+        <div class="ps-info-item">|</div>
+        <div class="ps-info-item">
+            <i class="ph ph-shield-check"></i>
+            <span>Edukasi</span>
+        </div>
+    </div>
+
+    <div class="ps-version-info">
+        <div>
+            <span class="ps-v-label">Versi Saat Ini</span>
+            <span class="ps-v-value">v1.2.0 <span class="badge-new">TERBARU</span></span>
+        </div>
+        <div style="text-align: right;">
+            <span class="ps-v-label">Rilis Pembaruan</span>
+            <span class="ps-v-value">21 April 2026</span>
+        </div>
+    </div>
+
+    <a href="https://github.com/amogenz/Game/releases/download/Apk/Nahwu.Card_.Master.I.rob.apk" class="ps-btn-instal">
+        Instal / Perbarui
+    </a>
+
+    <p class="ps-description">
+        Latih kemampuan analisa I'rob kamu melalui game kartu interaktif. Lebih stabil, lancar, dan hemat kuota dengan versi aplikasi Android resmi.
+    </p>
+</div>
+
 
         <div class="web-links">
             <a href="https://game-nahwu.amogenz.xyz" class="card-link">
