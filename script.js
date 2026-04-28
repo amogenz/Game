@@ -13,6 +13,11 @@ if (!DB?.length) {
   throw new Error('DB kosong');
 }
 
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('splash-screen').classList.add('hide');
+  }, 1700);
+});
 // ══════════════════════════════════════════════════════════
 // CARD THEMES — 9 themes with unique visuals
 // ══════════════════════════════════════════════════════════
