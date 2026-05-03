@@ -31,7 +31,7 @@ export const AMOGENZ_DB_LV1 = [
 "5": { "question": "Apa I'rob dari lafadz طالب?", "options": ["Rafa'", "Nashab", "Jazm"], "correct": "Rafa'", "explanation": "menjadi khobar (Melengkapi makna mubtada). dan hukum asal dari khobar adalah rofa'" },
 "6": { "question": "Apa alasan طالب dihukumi Rafa'?", "options": ["Khabar", "Na'at", "Taukid"], "correct": "Khabar", "explanation": "Isim yang dihukumi rafa' yang disandarkan kepada mubtada." },
 "7": { "question": "Apa tanda I'rob rofa pada lafadz طالب?", "options": ["Dhammah", "Fathah", "Wawu"], "correct": "Dhammah", "explanation": "karena Tanda rafa' pada isim mufrad munsharif adalah dhommah." },
-"8": { "question": "Mengapa tanda rqfa'nya menggunakan Dhammah?", "options": ["Isim Mufrad", "Jamak Muannas Salim", "Fi'il Mudhori'"], "correct": "Isim Mufrad", "explanation": "isim mufrad (isim yang bermakna tunggal) ketika rafa' itu tandanya dhommah." }
+"8": { "question": "Mengapa tanda rofa'nya menggunakan Dhammah?", "options": ["Isim Mufrad", "Jamak Muannas Salim", "Fi'il Mudhori'"], "correct": "Isim Mufrad", "explanation": "isim mufrad (isim yang bermakna tunggal) ketika rafa' itu tandanya dhommah." }
 }
 }
 ]
