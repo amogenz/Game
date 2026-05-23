@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'BerlinSansFB';
+    /* Menggunakan jsDelivr sebagai CDN gratis dari GitHub kamu */
+    src: url('https://cdn.jsdelivr.net/gh/amogenz/Amogenz/fonts/BerlinSansFBDemi-Bold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/amogenz/Amogenz/fonts/BerlinSansFBDemi-Bold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/amogenz/Amogenz/fonts/BerlinSansFB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 :root {
   --bg: #0a0f1e;
@@ -12,7 +23,7 @@
 
 * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; user-select:none; margin:0; padding:0; }
 
-html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-family:'Cinzel',serif; color:var(--text); }
+html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-family:'BerlinSansFB',serif; color:var(--text); }
 
 /* TABLE */
 #table {
@@ -312,7 +323,7 @@ html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-
   font-weight:900; width:100%;
   margin-top:clamp(14px,3.5vw,20px);
   font-size:clamp(.72rem,2.8vw,.88rem);
-  font-family:'Cinzel',serif; letter-spacing:2px;
+  font-family:'BerlinSansFB',serif; letter-spacing:2px;
   cursor:pointer;
   box-shadow:0 5px 16px rgba(245,200,66,.26);
   transition:transform .15s, box-shadow .15s;
@@ -379,7 +390,7 @@ html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-
   background: rgba(239, 68, 68, 0.1);
   border: 1px solid rgba(239, 68, 68, 0.3);
   color: var(--danger);
-  font-family: 'Cinzel', serif;
+  font-family: 'BerlinSansFB', serif;
   font-size: clamp(0.5rem, 2vw, 0.65rem);
   letter-spacing: 2px;
   padding: 4px 12px;
@@ -416,7 +427,7 @@ html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-
   justify-content: center;
   height: 36px; /* Tinggi disamakan semua */
   border-radius: 10px; /* Sudut disamakan */
-  font-family: 'Cinzel', serif;
+  font-family: 'BerlinSansFB', serif;
   font-size: clamp(0.55rem, 2vw, 0.65rem);
   font-weight: 700;
   letter-spacing: 1px;
@@ -479,7 +490,7 @@ html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-
   width: 100%;
   margin-top: 10px;
   font-size: clamp(.7rem, 2.5vw, .8rem);
-  font-family: 'Cinzel', serif;
+  font-family: 'BerlinSansFB', serif;
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.2s;
@@ -517,7 +528,7 @@ html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-
 #demo-text {
   position: relative; /* Agar ikut dalam aliran flexbox */
   margin-bottom: 50px; /* Jarak teks ke tangan */
-  font-family: 'Cinzel', serif;
+  font-family: 'BerlinSansFB', serif;
   color: var(--accent);
   font-size: clamp(1rem, 4vw, 1.4rem);
   text-align: center;
@@ -544,7 +555,7 @@ html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-
 }
 /* DROP ZONE TEXT */
 #qtext { 
-  font-family: 'Plus Jakarta Sans', sans-serif; /* Font lebih bersih */
+  font-family: 'BerlinSansFB', sans-serif; /* Font lebih bersih */
   font-size: clamp(0.85rem, 3vw, 1rem); 
   font-weight: 600;
   color: #ffffff; /* Putih bersih agar kontras tinggi */
@@ -553,7 +564,7 @@ html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-
 }
 
 .dz-hint { 
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'BerlinSansFB', sans-serif;
   font-size: clamp(0.55rem, 2vw, 0.65rem); 
   color: var(--accent); /* Kuning accent terang */
   font-weight: 700;
@@ -568,7 +579,7 @@ html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-
 /* HINT BAWAH (Navigasi) */
 #hint {
   flex-shrink: 0;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'BerlinSansFB', sans-serif;
   font-size: clamp(0.6rem, 2.2vw, 0.75rem);
   font-weight: 500;
   color: #ffffff; /* Dari redup jadi putih terang */
@@ -585,7 +596,7 @@ html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-
 #demo-text {
   position: relative;
   margin-bottom: 50px;
-  font-family: 'Plus Jakarta Sans', sans-serif; /* Ganti dari Cinzel */
+  font-family: 'BerlinSansFB', sans-serif; /* Ganti dari Cinzel */
   font-weight: 700;
   color: #ffffff;
   font-size: clamp(1.1rem, 5vw, 1.5rem);
@@ -613,4 +624,55 @@ html, body { width:100%; height:100%; overflow:hidden; background:#071a0e; font-
   object-fit: cover;
   position: fixed;
   inset: 0;
+}
+/* ==========================================
+   MODE SELECTOR STYLE (AMOGENZ PREMIUM)
+   ========================================== */
+.mode-selector-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 4px 24px 4px 10px;
+    margin: 5px 0;
+    transition: all 0.2s ease;
+}
+
+.mode-selector-wrapper:focus-within,
+.mode-selector-wrapper:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #f5c842;
+}
+
+#game-mode-select {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+}
+
+#game-mode-select option {
+    background: #1e1e1e;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.select-icon {
+    position: absolute;
+    right: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.7rem;
+    pointer-events: none;
 }

@@ -32,71 +32,86 @@
 </head>
 <body>
     <div id="splash-screen">
-  <img src="https://i.ibb.co.com/4Z92Xz3P/20260428-132359.png" alt="Game Nahwu" />
-</div>
-<div id="table"></div>
-<div id="rim"></div>
+      <img src="https://i.ibb.co.com/4Z92Xz3P/20260428-132359.png" alt="Game Nahwu" />
+    </div>
+    
+    <div id="table"></div>
+    <div id="rim"></div>
 
-<div id="app">
-<div id="topbar">
-  <div class="tb-header">
-    <div class="tb-label">Nahwu Card Master <br> Amogenz.Inc </div>
-    <div id="lbl-word">—</div>
-    <div id="lbl-cnt">0/0</div>
-  </div>
-  <div class="prog"><div id="prog-fill"></div></div>
-  <div id="dots"></div>
-</div>
+    <div id="app">
+      <div id="topbar">
+        <div class="tb-header">
+          <div class="tb-label">Nahwu Card Master <br> Amogenz.Inc </div>
 
-<div class="nav-actions">
-  <button id="btn-share" onclick="shareGame()" title="Bagikan Game">
-    <i class="ph ph-share-network"></i>
-  </button>
+          <div id="lbl-word">—</div>
+          <div id="lbl-cnt">0/0</div>
+        </div>
+        <div class="prog"><div id="prog-fill"></div></div>
+        <div id="dots"></div>
+      </div>
 
-  <a href="home.html" id="btn-home">
-    <i class="ph ph-house"></i> HOME
-  </a>
+      <div class="nav-actions">
+        <button id="btn-share" onclick="shareGame()" title="Bagikan Game">
+          <i class="ph ph-share-network"></i>
+        </button>
 
-  <button id="btn-surrender" onclick="surrender()">
-    🏳️ MENYERAH
-  </button>
-</div>
+        <a href="https://amogenz.xyz/" id="btn-home">
+          <i class="ph ph-house"></i> HOME
+        </a>
 
-<div id="sbox"><div id="sentence">...</div></div>
-
-  <div id="dropzone">
-    <div id="qtext">Pilih jawaban...</div>
-    <div class="dz-hint">↑ Flick kartu ke sini untuk jawab</div>
-  </div>
-
-  <div id="stage"><div id="deck"></div></div>
-
-  <div id="hint">◀ Geser kiri/kanan pilih kartu &nbsp;•&nbsp; <br>Flick atas untuk jawab ▲</div>
-</div>
-
-<div id="modal">
-  <div class="mbox">
-    <div id="m-suit">♠</div>
-    <h2 id="m-title">MUMTAZ!</h2>
-    <p id="m-desc"></p>
-    <button class="btn-ok" onclick="closeModal()">LANJUTKAN ▶</button>
-  </div>
+        <button id="btn-surrender" onclick="surrender()">
+          🏳️ MENYERAH
+        </button>
+      </div>
+      
+                <div class="mode-selector-wrapper">
+  <select id="game-mode-select" onchange="window.changeGameMode(this.value)">
+    <option value="lv1" selected>Nahwu: Level 1 (Dasar)</option>
+    <option value="lv2">Nahwu: Level 2 (Lanjutan)</option>
+    <option value="shorof">Shorof: Tashrif & Bina'</option>
+    <option value="alfiyah-isim">Alfiyah: Isim Bab</option>
+    <option value="alfiyah-fiil">Alfiyah: Fi'il Bab</option>
+    <option value="tajwid">Tajwid AI: Hukum Bacaan</option>
+  </select>
+  <i class="ph ph-caret-down select-icon"></i>
 </div>
 
-<div id="rdone">
-  <div class="rd-box">
-    <div class="rd-icon">🃏</div>
-    <div class="rd-title">KALIMAT SELESAI!</div>
-    <div class="rd-sub">Memuat kalimat berikutnya...</div>
-  </div>
-</div>
-<div id="demo-overlay" style="display:none;">
-  <div class="demo-hand" id="hand">
-    <i class="ph-fill ph-hand-pointing"></i>
-  </div>
-  <div id="demo-text">Geser kartu untuk memilih...</div>
-</div>
+      <div id="sbox"><div id="sentence">...</div></div>
 
-<script type="module" src="script.js"> </script>
+      <div id="dropzone">
+        <div id="qtext">Pilih jawaban...</div>
+        <div class="dz-hint">↑ Flick kartu ke sini untuk jawab</div>
+      </div>
+
+      <div id="stage"><div id="deck"></div></div>
+
+      <div id="hint">◀ Geser kiri/kanan pilih kartu &nbsp;•&nbsp; <br>Flick atas untuk jawab ▲</div>
+    </div>
+
+    <div id="modal">
+      <div class="mbox">
+        <div id="m-suit">♠</div>
+        <h2 id="m-title">MUMTAZ!</h2>
+        <p id="m-desc"></p>
+        <button class="btn-ok" onclick="closeModal()">LANJUTKAN ▶</button>
+      </div>
+    </div>
+
+    <div id="rdone">
+      <div class="rd-box">
+        <div class="rd-icon">🃏</div>
+        <div class="rd-title">KALIMAT SELESAI!</div>
+        <div class="rd-sub">Memuat kalimat berikutnya...</div>
+      </div>
+    </div>
+
+    <div id="demo-overlay" style="display:none;">
+      <div class="demo-hand" id="hand">
+        <i class="ph-fill ph-hand-pointing"></i>
+      </div>
+      <div id="demo-text">Geser kartu untuk memilih...</div>
+    </div>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
